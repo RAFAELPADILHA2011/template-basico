@@ -5,6 +5,6 @@ aqueles que estão familiarizados com a bibloteca.
 
 ## Salvando seu site com git e GitHub
 
-  Após instalar esse projeto
+  Após instalar esse projeto abra o *VScode* e 
 
-![](img/abrir-terminal.png)
+![](img/delete/init-git.png)
