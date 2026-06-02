@@ -1,14 +1,28 @@
-//espaço para variaveis
+//#region VARIAVEIS
 
+const tamanhoCanvasX = 400;
+const tamanhoCanvasY = 400;
 
-//funções do p5
+//#endregion
+
+//#region FUNÇÕES DO P5 JS
 
 function setup() {
-    createCanvas(400, 400);
+    createCanvas(tamanhoCanvasX, tamanhoCanvasY);
+    
+    suaFuncao();
 }
 
 function draw() {
     background(220);
 }
 
-//suas funcões
+//#endregion
+
+//#region MINHAS FUNÇÕES
+
+function suaFuncao() {
+    console.log("Olá, Mundo!!!");
+}
+
+//#endregion
