@@ -52,4 +52,80 @@ clique em **"new"** para criar um novo repositório, e depois aparecerá uma pá
 
 A primeiro campo importante será o nome do repositório, aquele que servirá como *nome da postagem do seu projeto*, e o segundo é para adicionar um arquivo **_README.md_** que nele você irá por todas as informações para o usuário, desde atualizações importantes, agradecimentos de forks de contribuidores se tiver, detalhes sobre para que serve e como usar seu projeto e para criar um bom e como funciona a estrutura de um **README** veja mais em *[Link](https://raullesteves.medium.com/github-como-fazer-um-readme-md-bonit%C3%A3o-c85c8f154f8)*.
 
-- 4º Passo: após preencher os campos com as informações necessárias,
+- 4º Passo: após preencher os campos com as informações necessárias, clique em **"new repository"** (botão está aí em baixo)
+
+
+  ![](img/delete/github-newrepo.png)
+
+
+  após isso voltaremos ao **VScode**.
+
+  - 5º Passo: agora iremos por a mão na massa, após abrir o **VScode** com seu projeto aberto, olhe a aba superior e clique em **"Terminal"** e depois em **"Novo Terminal"**, como mostra a imagem:
+
+
+ ![](img/delete/abrir-terminal.png)
+
+
+ Com isso se abrirá uma aba na parte inferior do **VScode** chamada de **"Terminal"**
+
+
+ ![](img/delete/terminal.png)
+
+
+ perceba que no canto direito do terminal um icone seguido de **"bash"**, caso esteja escrito algo que não seja "bash" clique no "+" e selecione "bash". Após a vereficação, clique na janela de comando (clique no "$") e siga as seguintes instruções. (**OBS: esse passo só necessário fazer apenas uma vez**).
+
+
+```
+git config --global user.name seuNomeNoGitHub
+```
+```
+git config --global user.email seuEmail.gmail.com
+```
+
+
+esses comandos faram uma conecção entre o **`GitHub`** e o **VScode**, assim você poderá mandar o projeto ao `GitHub`.
+
+
+
+```
+git init
+```
+
+
+`git init` fará que o **`git`** inicie o repositório
+
+
+```
+git add .
+```
+
+
+`git add . ` adciona **todos** os arquivos ao repositório.
+
+
+```
+git commit -m "nome do commit"
+```
+
+
+comando mais importante, já que ele criará o commit, e o commit é basicamente o registro permanente de todos os arquivos do seu projeto em uma atualização.
+
+
+```
+git remote add origin "https://github.com/seuNomeNoGitHub/nomeDoSeuRepositório"
+```
+
+
+`"https://github.com/seuNomeNoGitHub/nomeDoSeuRepositório" troque pela url do seu repositório no GitHub que você fez no passo 5.`
+
+
+`git remote add origin ...` dizerá ao `GitHub` que todas as atualizações que você fazer seram redirecionadas ao link que você mandou de forma remota. (**OBS: esse passo só necessário fazer apenas uma vez**).
+
+
+```
+git push -u origin main
+```
+
+
+ultimo comando, ele transportará o commit que você fez para o repositório no `GitHub`, assim acabamos de salvar nosso projeto e salvar no GitHub.
+
